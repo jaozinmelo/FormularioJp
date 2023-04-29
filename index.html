@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/theme.js" defer></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <h1>Todo</h1>
+          <div class="navbar__theme">
+            <input type="checkbox" id="buttonTheme" />
+            <label for="buttonTheme" class="change-theme"></label>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="todo">
+          <form class="todo-field" id="todoForm">
+            <input type="checkbox" />
+            <input type="text" id="todoInput" placeholder="Criar nova tarefa" />
+          </form>
+
+          <ul class="todo__list">
+             <!--NOVA TAREFA SERA ADICIONADA AQUI !-->
+
+            <li class="todo__item-footer">
+              <p id="items-left">Tarefas</p>
+              <div class="todo__taskbar-desktop">
+                <button class="todo__button" id="all">Ver Tarefas</button>
+                <button class="todo__button" id="completed">
+                  Completar Tarefas
+                </button>
+              </div>
+              <button id="clearCompleted">Limpar Tarefas</button>
+            </li>
+          </ul>
+
+          <div class="todo__footer">
+            <p>Todo List , Estudos - DOM - CSS</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
